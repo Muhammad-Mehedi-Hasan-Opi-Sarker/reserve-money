@@ -25,6 +25,13 @@ box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
 .margin{
     margin-top: 3px;
 }
+/* hide  */
+
+.hide{
+    color:white;
+    background-color: red;
+    display: none;
+}
 
 /* mobile responsive */
  @media screen and (max-width:600px) {
