@@ -18,7 +18,7 @@ document.getElementById('calculate-button').addEventListener('click', function (
         negative.style.display = 'none';
         if (income.value > foodRentClothe) {
             balance.innerText = total;
-
+            big.style.display = 'none';
         }
         else {
             big.style.display = 'block';
@@ -51,10 +51,17 @@ document.getElementById('save-button').addEventListener('click', function () {
     saveAmount.innerText = total.toFixed(2);
     // Remaining Balance
     const balance = document.getElementById('balance');
+    const save = document.getElementById('save');
+    if (balance.innerText > total) {
+        const remainingBalance = document.getElementById('remaining-balance');
+        let remaining = parseInt(balance.innerText) - total;
+        remainingBalance.innerText = remaining;
+        save.style.display = 'none';
 
-    const remainingBalance = document.getElementById('remaining-balance');
-    let remaining = parseInt(balance.innerText) - total;
-    remainingBalance.innerText = remaining
+    }
+    else {
+        save.style.display = 'block';
+    }
 
 
 
