@@ -32,6 +32,11 @@ box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
     background-color: red;
     display: none;
 }
+.bla-style{
+    font-size: 2rem;
+    color: white;
+
+}
 
 /* mobile responsive */
  @media screen and (max-width:600px) {

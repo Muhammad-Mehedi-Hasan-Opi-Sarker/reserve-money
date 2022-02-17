@@ -3,7 +3,8 @@ document.getElementById('calculate-button').addEventListener('click', function (
     const food = document.getElementById('food');
     const rent = document.getElementById('rent');
     const clothes = document.getElementById('clothes');
-    const now = document.getElementById('now');
+    const negative = document.getElementById('negative');
+    const big = document.getElementById('big');
     // total expenses 
     const totalExpenses = document.getElementById('total-expenses');
     if (income.value > 0) {
@@ -13,11 +14,20 @@ document.getElementById('calculate-button').addEventListener('click', function (
         // balance cheek 
         const balance = document.getElementById('balance');
         total = parseInt(income.value) - foodRentClothe;
-        balance.innerText = total;
-        now.style.display = 'none';
+        // balance.innerText = total;
+        negative.style.display = 'none';
+        if (income.value > foodRentClothe) {
+            balance.innerText = total;
+
+        }
+        else {
+            big.style.display = 'block';
+
+        }
+
     }
     else {
-        now.style.display = 'block';
+        negative.style.display = 'block';
     }
 
     // empty file 

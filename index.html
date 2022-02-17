@@ -27,7 +27,7 @@
         <section class="back">
             <div class="text-center p-3">
                 <h3 class="mob-res">Incomes</h3>
-                <span id="now" class="hide">Please, exist positive number.</span>
+                <span id="negative" class="hide">Please, exist positive number.</span>
 
                 <div class="d-flex justify-content-center p-3">
                     <h4 class="mob-res p-1">Income:</h4>
@@ -50,7 +50,10 @@
                 <div class="mt-3"> <button class="calcu" id="calculate-button" type="submit">Calculate</button></div>
                 <div class="margin">
                     <h3 class="mob-res">Total Expenses: <span id="total-expenses"></span> </h3>
-                    <h3 class="mob-res">Balance: <span id="balance"></span></h3>
+                    <span id="big" class="hide">Your expense more than income.So, we can't
+                        show your <span class="bla-style">"balance."</span> </span>
+                    <h3 class="mob-res">Balance: <span id="balance"></small></span></h3>
+
                 </div>
 
                 <!-- save money part  -->
