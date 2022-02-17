@@ -7,17 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Reserve Money Calculator</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
-    <section>
-        <h1>Reserve Money</h1>
-        <div>
-            <img src="image/money.png" alt="">
-        </div>
+    <!-- image size  -->
+    <main class="container container-sm d-lg-flex">
+        <section class="">
+            <h1 class="text-center">Reserve Money</h1>
+            <div>
+                <img class="img-fluid" src="image/money.png" alt="">
+            </div>
 
-    </section>
+        </section>
+        <!-- income -->
 
+        <section class="back">
+            <div class="text-center p-3">
+                <h3 class="mob-res">Incomes</h3>
+                <div class="d-flex justify-content-center p-3">
+                    <h4 class="mob-res p-1">Income:</h4>
+                    <input type="number" name="" id="">
+                </div>
+                <h3 class="mob-res">Expenses</h3>
+                <div class="d-flex justify-content-center p-3">
+                    <h4 class="mob-res p-1">Food:</h4>
+                    <input type="number" name="" id="">
+                </div>
+                <div class="d-flex justify-content-center p-3">
+                    <h4 class="mob-res p-1">Rent:</h4>
+                    <input type="number" name="" id="">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <h4 class="mob-res p-1">Clothes:</h4>
+                    <input type="number" name="" id="">
+                </div>
+
+                <div class="mt-3"> <button class="calcu" id="no" type="submit">Calculate</button></div>
+                <div class="margin">
+                    <h3 class="mob-res">Total Expenses: <span id="no"></span> </h3>
+                    <h3 class="mob-res">Balance: <span id="no"></span></h3>
+                </div>
+
+                <!-- save money part  -->
+
+                <div class="d-flex justify-content-center">
+                    <h4 class="mob-res">Save:</h4>
+                    <input type="number" name="" id="">
+                    <p>%</p>
+                    <button class="calcu" type="submit">Save</button>
+                </div>
+
+                <div>
+                    <h3 class="mob-res">Saving Amount: <span id="no"></span></h3>
+                    <h3 class="mob-res">Remaining Balance: <span id=""></span></h3>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
     <script src="js/script.js"></script>
 </body>
 
